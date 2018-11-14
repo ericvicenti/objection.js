@@ -1,0 +1,1 @@
+var isPromise=require('./isPromise');function afterReturn(obj,returnValue){if(isPromise(obj)){return obj.then(function(){return returnValue;});}else{return returnValue;}}module.exports=afterReturn;

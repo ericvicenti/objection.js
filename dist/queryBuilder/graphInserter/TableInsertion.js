@@ -1,0 +1,1 @@
+function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}var TableInsertion=function TableInsertion(modelClass,isJoinTableInsertion){_classCallCheck(this,TableInsertion);this.modelClass=modelClass;this.isJoinTableInsertion=isJoinTableInsertion;this.items=[];};module.exports=TableInsertion;

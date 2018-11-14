@@ -5,6 +5,7 @@
   "main": "lib/objection.js",
   "license": "MIT",
   "scripts": {
+    "build": "babel lib --out-dir dist",
     "test": "npm run eslint && mocha --slow 10 --timeout 15000 --reporter spec --recursive tests --exclude \"tests/unit/relations/files/**\"",
     "test-travis": "npm run eslint && nyc mocha --slow 100 --timeout 60000 --reporter spec --recursive tests --exclude \"tests/unit/relations/files/**\" && npm run test-typings",
     "test-fast": "mocha --slow 10 --timeout 15000 --reporter spec --recursive tests --bail --exclude \"tests/unit/relations/files/**\"",
@@ -67,7 +68,9 @@
   "devDependencies": {
     "@types/knex": "^0.14.5",
     "@types/node": "^10.0.6",
+    "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.1",
+    "babel-preset-react-native": "^4.0.1",
     "chai": "^4.1.2",
     "chai-subset": "^1.6.0",
     "coveralls": "^3.0.0",

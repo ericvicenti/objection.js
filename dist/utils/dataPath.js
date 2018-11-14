@@ -1,0 +1,1 @@
+var _require=require('./objectUtils'),isNumber=_require.isNumber;function appendDataPath(dataPath,relationOrIndex){var token=isNumber(relationOrIndex)?'['+relationOrIndex+']':'.'+relationOrIndex.name;return dataPath?''+dataPath+token:token;}module.exports={appendDataPath:appendDataPath};
