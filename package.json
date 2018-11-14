@@ -2,7 +2,7 @@
   "name": "objection",
   "version": "1.4.0",
   "description": "An SQL-friendly ORM for Node.js",
-  "main": "lib/objection.js",
+  "main": "dist/objection.js",
   "license": "MIT",
   "scripts": {
     "build": "babel lib --out-dir dist",
