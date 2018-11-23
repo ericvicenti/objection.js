@@ -53,7 +53,7 @@
   "files": [
     "README.md",
     "LICENSE",
-    "lib/*",
+    "dist/*",
     "typings/*"
   ],
   "types": "./typings/objection/index.d.ts",
